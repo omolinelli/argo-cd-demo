@@ -1,0 +1,19 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: rules-gitops-argocd-demo
+  labels:
+    app: nginx
+spec:
+  ingressClassName: cliente1.curso.local
+  rules:
+  - host: 
+    http:
+      paths:
+      - pathType: Prefix
+        path: /
+        backend:
+          service:
+            name: dev-svc
+            port:
+              number: 80
