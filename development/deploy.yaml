@@ -5,7 +5,7 @@ metadata:
   labels:
     app: nginx
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
       app: nginx
@@ -16,4 +16,7 @@ spec:
     spec:
       containers:
       - name: nginx-container
-        image: nginx:latest
+      # Cambiar esta versión para probar rolling updates
+        # nbrown/nginxhello:1.12.1
+        # nbrown/nginxhello:1.13.5
+        image: nbrown/nginxhello:1.12.1
