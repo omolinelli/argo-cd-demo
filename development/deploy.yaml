@@ -19,4 +19,4 @@ spec:
       # Cambiar esta versión para probar rolling updates
         # nbrown/nginxhello:1.12.1
         # nbrown/nginxhello:1.13.5
-        image: nbrown/nginxhello:1.12.1
+        image: nbrown/nginxhello:1.13.5
