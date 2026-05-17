@@ -5,9 +5,9 @@ metadata:
   labels:
     app: nginx
 spec:
-  ingressClassName: cliente1.curso.local
+  ingressClassName: nginx
   rules:
-  - host: 
+  - host: cliente1.curso.local
     http:
       paths:
       - pathType: Prefix
