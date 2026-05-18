@@ -5,7 +5,7 @@ metadata:
   labels:
     app: nginx
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app: nginx
@@ -21,4 +21,4 @@ spec:
         # nbrown/nginxhello:1.13.5
         image: hashicorp/http-echo
         args:
-        - "-text=Version 6"
+        - "-text=Version 7"
