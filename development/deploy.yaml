@@ -21,4 +21,8 @@ spec:
         # nbrown/nginxhello:1.13.5
         image: hashicorp/http-echo
         args:
+<<<<<<< HEAD
         - "-text=Version 9"
+=======
+        - "-text=Version 8"
+>>>>>>> f7d99ed058d7c2c5053fd6a42bff5009181ef460
